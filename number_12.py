@@ -1,0 +1,9 @@
+l = []
+for i in range(2,100):
+    s = '5' * i
+    while '555' in s or '888' in s:
+        s = s.replace('555','8',1)
+        s = s.replace('888','55',1)
+    l.append(s)
+l = set(l)
+print(len(l))
